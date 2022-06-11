@@ -1,20 +1,20 @@
 #!/usr/bin/env bash
 
-# Copy binaries
-ln -fs $DOTFILES_DIR/extras/bins $HOME/bin/
+# # Copy binaries
+# ln -fs $DOTFILES_DIR/extras/bins $HOME/bin/
 
-declare -a BINARIES=(
-  "crlf"
-  "git-delete-merged-branches"
-  "ssh-key"
-)
+# declare -a BINARIES=(
+#   "crlf"
+#   "git-delete-merged-branches"
+#   "ssh-key"
+# )
 
-for i in ${BINARIES[@]}; do
-  echo "Changing access permissions for binary script :: ${i##*/}"
-  chmod +rwx $HOME/bin/${i##*/}
-done
+# for i in ${BINARIES[@]}; do
+#   echo "Changing access permissions for binary script :: ${i##*/}"
+#   chmod +rwx $HOME/bin/${i##*/}
+# done
 
-unset BINARIES
+# unset BINARIES
 
 # Create symlinks
 
@@ -65,15 +65,8 @@ declare -a SYMLINK_TO=(
 )
 
 for i in ${!SYMLINK_FROM[@]}; do
-  if [ -e "${SYMLINK_TO[$i]}" ]; then
-    # mv ${SYMLINK_TO[$i]} $DOTFILES_BAK
-    echo "moving -> ${SYMLINK_TO[$i]}"
-    echo "bak -> $DOTFILES_BAK"
-  fi
-
   echo "Creating the link of ${SYMLINK_FROM[$i]}"
   ln -fs "${SYMLINK_FROM[$i]}" "${SYMLINK_TO[$i]}"
-  # cp -r $DOTFILES_DIR/config/awesome $CONFIG_DIR/awesome
 done
 
 unset SYMLINK_FROM

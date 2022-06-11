@@ -29,7 +29,7 @@ awful.keyboard.append_global_keybindings({
 	end, { description = "open terminal", group = "app" }),
 
 	-- App launcher
-	awful.key({ mod }, "d", function()
+	awful.key({ mod }, "space", function()
 		awful.spawn.with_shell(apps.default.app_launcher)
 	end, { description = "open app launcher", group = "app" }),
 
@@ -256,7 +256,7 @@ client.connect_signal("request::default_keybindings", function()
 		end),
 
 		-- Toggle floating
-		awful.key({ mod, ctrl }, "space", awful.client.floating.toggle),
+		-- awful.key({ mod, ctrl }, "space", awful.client.floating.toggle),
 
 		-- Toggle fullscreen
 		awful.key({ mod }, "f", function()

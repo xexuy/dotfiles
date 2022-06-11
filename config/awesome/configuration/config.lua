@@ -15,7 +15,7 @@ return {
 		-- Github activity
 		github = {
 			-- Username
-			username = "",
+			username = "xexuy",
 			-- Number of events
 			number_of_events = 5,
 		},

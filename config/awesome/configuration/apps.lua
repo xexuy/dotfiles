@@ -6,19 +6,19 @@ return {
 	-- Default Applications
 	default = {
 		-- Default terminal emulator
-		terminal = "alacritty",
+		terminal = "kitty",
 		-- Defalut music client
-		music_player = "alacritty --class music -e ncmpcpp",
+		music_player = "kitty --class music -e ncmpcpp",
 		-- Default text editor
-		text_editor = "alacritty -e nvim",
+		text_editor = "kitty -e nvim",
 		-- Default code editor
 		code_editor = "code",
 		-- Default web browser
 		web_browser = "firefox",
 		-- Default file manager
-		file_manager = "nautilus",
+		file_manager = "thunar",
 		-- Default network manager
-		network_manager = "alacritty -e nmtui",
+		network_manager = "kitty -e nmtui",
 		-- Default bluetooth manager
 		bluetooth_manager = "blueman-manager",
 		-- Default power manager

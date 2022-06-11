@@ -42,7 +42,7 @@ theme.transparent = "#00000000"
 -- ░▀░░░▀▀▀░▀░▀░░▀░░▀▀▀
 
 -- Ui Fonts
-theme.font_name = "SF Pro Display "
+theme.font_name = "FiraCode "
 theme.font = theme.font_name .. "Medium 10"
 
 -- Icon Fonts
