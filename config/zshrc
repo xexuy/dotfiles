@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# source plugins
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /usr/share/fzf/key-bindings.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+# Load the shell dotfiles
+for file in $HOME/.{shell_functions,shell_config,shell_exports,shell_aliases}; do
+  [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
+
+# tty
+if [ "$TERM" = "linux" ] ; then
+    echo -en "\e]P0232323"
+fi
+
+# init starship
+eval "$(starship init zsh)"
