@@ -15,26 +15,26 @@ local helpers = require("helpers")
 -- ░█▀█░█▀▀░▀▀█░░█░░█▀█░█▀▀░░█░░░█░░█░░░░░█░█░░█░░█░█░█▀█░░█░
 -- ░▀░▀░▀▀▀░▀▀▀░░▀░░▀░▀░▀▀▀░░▀░░▀▀▀░▀▀▀░░░▀░▀░▀▀▀░▀▀▀░▀░▀░░▀░
 
-theme.xbackground = "#061115"
-theme.xforeground = "#D9D7D6"
-theme.xcolor0 = "#1C252C"
-theme.xcolor1 = "#DF5B61"
-theme.xcolor2 = "#78B892"
-theme.xcolor3 = "#DE8F78"
-theme.xcolor4 = "#6791C9"
-theme.xcolor5 = "#BC83E3"
-theme.xcolor6 = "#67AFC1"
-theme.xcolor7 = "#D9D7D6"
-theme.xcolor8 = "#484E5B"
-theme.xcolor9 = "#F16269"
-theme.xcolor10 = "#8CD7AA"
-theme.xcolor11 = "#E9967E"
-theme.xcolor12 = "#79AAEB"
-theme.xcolor13 = "#C488EC"
-theme.xcolor14 = "#7ACFE4"
-theme.xcolor15 = "#E5E5E5"
-theme.darker_bg = "#0A1419"
-theme.lighter_bg = "#162026"
+theme.xbackground = "#11111b"
+theme.xforeground = "#cdd6f4"
+theme.xcolor0 = "#6c7086"
+theme.xcolor1 = "#f2cdcd"
+theme.xcolor2 = "#a6e3a1"
+theme.xcolor3 = "#fab387"
+theme.xcolor4 = "#89b4fa"
+theme.xcolor5 = "#cba6f7"
+theme.xcolor6 = "#74c7ec"
+theme.xcolor7 = "#cdd6f4"
+theme.xcolor8 = "#9399b2"
+theme.xcolor9 = "#f38ba8"
+theme.xcolor10 = "#a6e3a1"
+theme.xcolor11 = "#f2cdcd"
+theme.xcolor12 = "#89dceb"
+theme.xcolor13 = "#b4befe"
+theme.xcolor14 = "#94e2d5"
+theme.xcolor15 = "#cdd6f4"
+theme.darker_bg = "#181825"
+theme.lighter_bg = "#313244"
 theme.transparent = "#00000000"
 
 -- ░█▀▀░█▀█░█▀█░▀█▀░█▀▀
@@ -42,7 +42,7 @@ theme.transparent = "#00000000"
 -- ░▀░░░▀▀▀░▀░▀░░▀░░▀▀▀
 
 -- Ui Fonts
-theme.font_name = "FiraCode "
+theme.font_name = "JetBrains Mono "
 theme.font = theme.font_name .. "Medium 10"
 
 -- Icon Fonts
