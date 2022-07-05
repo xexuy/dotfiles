@@ -29,7 +29,7 @@ awful.keyboard.append_global_keybindings({
 	end, { description = "open terminal", group = "app" }),
 
 	-- App launcher
-	awful.key({ mod }, "space", function()
+	awful.key({ mod, alt }, "space", function()
 		awful.spawn.with_shell(apps.default.app_launcher)
 	end, { description = "open app launcher", group = "app" }),
 
@@ -197,7 +197,7 @@ awful.keyboard.append_global_keybindings({
 	end, { description = "take a area screenshot", group = "hotkeys" }),
 
 	-- Lockscreen
-	awful.key({ mod, alt }, "l", function()
+	awful.key({ mod }, "l", function()
 		lock_screen_show()
 	end, { description = "lock screen", group = "hotkeys" }),
 
@@ -254,9 +254,6 @@ client.connect_signal("request::default_keybindings", function()
 		awful.key({ mod, shift, ctrl }, "l", function(c)
 			c:relative_move(dpi(20), 0, 0, 0)
 		end),
-
-		-- Toggle floating
-		-- awful.key({ mod, ctrl }, "space", awful.client.floating.toggle),
 
 		-- Toggle fullscreen
 		awful.key({ mod }, "f", function()
@@ -378,6 +375,7 @@ awful.keyboard.append_global_keybindings({
 awful.keyboard.append_global_keybindings({
 	awful.key({ mod, alt }, "Left", awful.tag.viewprev, { description = "view previous", group = "tags" }),
 	awful.key({ mod, alt }, "Right", awful.tag.viewnext, { description = "view next", group = "tags" }),
+	awful.key({ mod }, "Tab", awful.tag.viewnext, { description = "view next", group = "tags" }),
 	awful.key({
 		modifiers = { mod },
 		keygroup = "numrow",
