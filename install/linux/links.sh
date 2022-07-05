@@ -1,20 +1,20 @@
 #!/usr/bin/env bash
 
 # # Copy binaries
-# ln -fs $DOTFILES_DIR/extras/bins $HOME/bin/
+ln -fs $DOTFILES_DIR/extras/bins $HOME/bin/
 
-# declare -a BINARIES=(
-#   "crlf"
-#   "git-delete-merged-branches"
-#   "ssh-key"
-# )
+declare -a BINARIES=(
+  "crlf"
+  "git-delete-merged-branches"
+  "ssh-key"
+)
 
-# for i in ${BINARIES[@]}; do
-#   echo "Changing access permissions for binary script :: ${i##*/}"
-#   chmod +rwx $HOME/bin/${i##*/}
-# done
+for i in ${BINARIES[@]}; do
+  echo "Changing access permissions for binary script :: ${i##*/}"
+  chmod +rwx $HOME/bin/${i##*/}
+done
 
-# unset BINARIES
+unset BINARIES
 
 # Create symlinks
 
@@ -39,6 +39,7 @@ declare -a SYMLINK_FROM=(
   "$DOTFILES_DIR/config/ncmpcpp/config"
   "$DOTFILES_DIR/config/starship/starship.toml"
   "$DOTFILES_DIR/config/awesome"
+  "$DOTFILES_DIR/config/helix"
 )
 
 declare -a SYMLINK_TO=(
@@ -62,6 +63,7 @@ declare -a SYMLINK_TO=(
   "$CONFIG_DIR/ncmpcpp/config"
   "$CONFIG_DIR/starship/starship.toml"
   "$CONFIG_DIR/awesome"
+  "$CONFIG_DIR/helix"
 )
 
 for i in ${!SYMLINK_FROM[@]}; do

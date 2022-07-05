@@ -97,7 +97,7 @@ local power_on_cmd = [[
 
 	# Add a delay here so we can enable the bluetooth
 	sleep 1
-	
+
 	bluetoothctl power on
 ]]
 

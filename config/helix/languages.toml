@@ -1,0 +1,36 @@
+[[language]]
+name = "c"
+language-server = { command = "ccls" }
+indent = { tab-width = 2, unit = "\t" }
+
+[[language]]
+name = "cpp"
+language-server = { command = "ccls" }
+indent = { tab-width = 2, unit = "\t" }
+
+[[language]]
+name = "rust"
+language-server = { command = "rustup", args = ["run", "nightly", "rust-analyzer"] }
+
+[[language]]
+name = "typescript"
+language-server = { command = "deno", args = ["lsp"] }
+config = { deno = { enable = true, lint = true } }
+indent = { tab-width = 2, unit = "\t" }
+
+[[language]]
+name = "javascript"
+language-server = { command = "deno", args = ["lsp"] }
+config = { deno = { enable = true, lint = true } }
+indent = { tab-width = 2, unit = "\t" }
+
+[[language]]
+name = "ruby"
+language-server = { command = "solargraph" }
+indent = { tab-width = 2, unit = "\t" }
+file-types = ["rb", "cr"]
+
+[[language]]
+name = "elixir"
+language-server = { command = "elixir-ls" }
+indent = { tab-width = 2, unit = "\t" }

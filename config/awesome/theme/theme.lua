@@ -218,7 +218,6 @@ theme.notif_center_notifs_accent = theme.xcolor0
 
 -- Swallowing
 theme.dont_swallow_classname_list = {
-	"firefox",
 	"gimp",
 	"Google-chrome",
 	"Thunar",

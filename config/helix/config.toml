@@ -1,0 +1,40 @@
+theme = "catppuccin_italics"
+
+[editor]
+line-number = "relative"
+cursor-shape = { insert = "bar" }
+whitespace.render = "all"
+whitespace.characters = { space = " ", tab = "▏", newline = "¬" }
+
+# Keymap for the Colemak layout and Kakoune habits (who needs a select mode)
+#[keys.normal]
+#j = "move_line_up"
+#k = "move_line_down"
+#H = "extend_char_left"
+#J = "extend_line_up"
+#K = "extend_line_down"
+#L = "extend_char_right"
+#D = "remove_primary_selection" # like in kakoune, non-obvious name for 'opposite of C'
+#W = "extend_next_word_start"
+#B = "extend_prev_word_start"
+#T = "extend_till_char"
+#F = "extend_next_char"
+#"A-t" = "till_prev_char"
+#"A-f" = "find_prev_char"
+#"A-T" = "extend_till_prev_char"
+#"A-F" = "extend_prev_char"
+#"C-j" = "join_selections" # instead of J
+#"#" = "toggle_comments"
+#"$" = "extend_to_line_end"
+#"^" = "extend_to_line_start"
+#"{" = "goto_prev_paragraph"
+#"}" = "goto_next_paragraph"
+#"left" = "goto_previous_buffer"
+#"right" = "goto_next_buffer"
+#"space" = { "q" = ":bc" }
+#
+#[keys.select]
+#j = "extend_line_up"
+#k = "extend_line_down"
+## "{" = "extend_prev_paragraph" # doesn't exist yet
+## "}" = "extend_next_paragraph"

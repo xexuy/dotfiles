@@ -2,9 +2,9 @@ return {
 	widget = {
 		weather = {
 			-- API Key
-			key = "",
+			key = "17de6caf0515c4c8bdb895d86ac4c35d",
 			-- City ID
-			city_id = "",
+			city_id = "Tijuana",
 			-- Coordinates
 			coordinates = {
 				"", -- lat

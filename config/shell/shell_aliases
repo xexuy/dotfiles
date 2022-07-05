@@ -155,3 +155,7 @@ alias ll='ls -la'
 
 ## Show hidden files ##
 alias l.='ls -d .* --color=auto'
+
+alias icat="kitty +kitten icat --align=left"
+alias codeaf="cd /home/xexuy/snap/exercism/5/exercism/"
+

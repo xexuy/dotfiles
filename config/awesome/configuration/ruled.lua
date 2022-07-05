@@ -41,8 +41,6 @@ ruled.client.connect_signal("request::rules", function()
 			class = {
 				"Spotify",
 				"Org.gnome.Nautilus",
-				"Firefox",
-				"firefox",
 			},
 		},
 		properties = {
@@ -60,8 +58,6 @@ ruled.client.connect_signal("request::rules", function()
 			class = {
 				"Lxappearance",
 				"Nm-connection-editor",
-				"Firefox",
-				"firefox",
 			},
 			name = {
 				"Event Tester", -- xev
