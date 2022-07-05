@@ -34,17 +34,17 @@ awful.keyboard.append_global_keybindings({
 	end, { description = "open app launcher", group = "app" }),
 
 	-- Code editor
-	awful.key({ mod, shift }, "e", function()
+	awful.key({ mod }, "e", function()
 		awful.spawn(apps.default.code_editor)
 	end, { description = "open code editor", group = "app" }),
 
 	-- File manager
-	awful.key({ mod, shift }, "f", function()
+	awful.key({ mod }, "f", function()
 		awful.spawn(apps.default.file_manager)
 	end, { description = "open file manager", group = "app" }),
 
 	-- Web browser
-	awful.key({ mod, shift }, "w", function()
+	awful.key({ mod }, "w", function()
 		awful.spawn(apps.default.web_browser)
 	end, { description = "open web browser", group = "app" }),
 
@@ -57,7 +57,7 @@ awful.keyboard.append_global_keybindings({
 	awful.key({ mod, ctrl }, "q", awesome.quit, { description = "quit awesome", group = "WM" }),
 
 	-- Show help
-	awful.key({ mod }, "F1", hotkeys_popup.show_help, { description = "show Help", group = "WM" }),
+	awful.key({ mod, ctrl }, "h", hotkeys_popup.show_help, { description = "show Help", group = "WM" }),
 
 	---- Client
 	---------------
@@ -256,7 +256,7 @@ client.connect_signal("request::default_keybindings", function()
 		end),
 
 		-- Toggle fullscreen
-		awful.key({ mod }, "f", function()
+		awful.key({ mod, shift }, "f", function()
 			client.focus.fullscreen = not client.focus.fullscreen
 			client.focus:raise()
 		end),
